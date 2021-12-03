@@ -1,0 +1,86 @@
+.centerContent {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 540px;
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font: 24px Helvetica, Arial, sans-serif;
+  background-color: rgb(214, 214, 214);
+  padding: 20px;
+}
+
+.button {
+  cursor: pointer;
+  font: inherit;
+  padding: 12px 30px;
+  display: inline-block;
+  border: none;
+  border-radius: 3px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: inherit;
+  font-family: inherit;
+  line-height: inherit;
+  text-decoration: none !important;
+  width: 500px;
+  padding-top: 20%;
+  padding-bottom: 20%;
+}
+
+.button:focus {
+  outline-width: 0;
+}
+
+.buttonBlue {
+  color: rgb(241, 241, 241) !important;
+  background-color: rgb(81, 0, 255);
+}
+
+.buttonBlue:hover {
+  color: rgb(221, 219, 219) !important;
+  background-color: rgb(73, 2, 226);
+  border: 1px solid #1b1f2b;
+}
+
+.buttonRed {
+  cursor: default;
+  /* background-color: rgb(252, 58, 40); */
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  animation: gradient 15s ease infinite;
+}
+
+.buttonGreen {
+  background-color: rgb(0, 255, 8);
+}
+
+.buttonGreen:hover {
+  background-color: rgb(2, 221, 9);
+  border: 1px solid #1b1f2b;
+}
+
+body {
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+      background-position: 0% 50%;
+  }
+  50% {
+      background-position: 100% 50%;
+  }
+  100% {
+      background-position: 0% 50%;
+  }
+}
+
+
+
